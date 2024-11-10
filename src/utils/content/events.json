@@ -1,0 +1,26 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "image": "https://via.placeholder.com/150",
+            "title": "LUG Orientation 2024",
+            "description": "An introduction to the Linux User Group",
+            "date": "2024-10-08"
+
+        },
+        {
+            "id": 2,
+            "image": "https://via.placeholder.com/150",
+            "title": "Event 2",
+            "description": "Description 2",
+            "date": "2021-01-02"
+        },
+        {
+            "id": 3,
+            "image": "https://via.placeholder.com/150",
+            "title": "An Introduction to Linux and GIT",
+            "description": "A workshop conducted by the Linux User Group in collaboration with the Google Developer Student Club",
+            "date": "2021-01-03"
+        }
+    ]
+}
