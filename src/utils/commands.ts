@@ -15,37 +15,48 @@ const fileSystem = {
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
   help: () => {
     return `
-Available commands:
-1. help
-   - Usage: help
-   - Description: Displays this help message with a list of available commands.   
-3. whoami
-   - Usage: whoami
-   - Description: Returns the current user identity (default is 'guest').
-4. echo
-   - Usage: echo [args]
-   - Description: Echoes back the provided arguments as a string.
-6. repo
-   - Usage: repo
-   - Description: Opens the repository URL in a new tab.
-7. clear
-    - Usage: clear
-    - Description: Clears the command history.
-8. email
-    - Usage: email
-    - Description: Opens the default email client to send an email to the author.
-9. exit
-    - Usage: exit
-    - Description: Instructs the user to close the tab to exit.
-10. banner
-    - Usage: banner
-    - Description: Displays a banner with application information and version.
-11. events [event_id]
-    - Usage:
-      events         : Displays all events.
-      events [id]    : Displays details of the event with the specified ID.
-    - Description: Lists events or shows details of a specific event.
-`;
+  Available commands:
+  1. help
+     - Usage: help
+     - Description: Displays this help message with a list of available commands.
+  2. hostname
+     - Usage: hostname
+     - Description: Returns the current hostname.
+  3. whoami
+     - Usage: whoami
+     - Description: Returns the current user identity (default is 'guest').
+  4. echo [args]
+     - Usage: echo [args]
+     - Description: Echoes back the provided arguments as a string.
+  5. repo
+     - Usage: repo
+     - Description: Opens the repository URL in a new tab.
+  6. clear
+     - Usage: clear
+     - Description: Clears the command history.
+  7. email
+     - Usage: email
+     - Description: Opens the default email client to send an email to the author.
+  8. exit
+     - Usage: exit
+     - Description: Instructs the user to close the tab to exit.
+  9. banner
+     - Usage: banner
+     - Description: Displays a banner with application information and version.
+  10. ls
+      - Usage: ls
+      - Description: Lists the contents of the current directory.
+  11. cd [directory]
+      - Usage: cd [directory]
+      - Description: Changes the current directory. Use 'cd ..' to go up one level, or 'cd ~' to return to home.
+  12. pwd
+      - Usage: pwd
+      - Description: Prints the current working directory.
+  13. cat [filename]
+      - Usage: cat [filename]
+      - Description: Displays the contents of a file.
+  Type a command and press Enter to execute it.
+  `;
   },
   hostname: () => hostname,
   whoami: () => 'guest',
